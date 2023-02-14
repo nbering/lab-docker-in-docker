@@ -3,6 +3,11 @@
 Experimenting with Docker configuration, using Docker-in-Docker for some minor
 isolation from other Docker workloads on the machine.
 
+# Why?
+When developing software that interacts with the Docker API, sometimes it's
+helpful to have a Docker instance isolated from the environment you're using for
+your dev containeers, or other projects.
+
 # Exercises
 
 1. Basic[./1-Basic/README.md]
