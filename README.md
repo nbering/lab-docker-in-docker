@@ -9,7 +9,14 @@ isolation from other Docker workloads on the machine.
 
 
 ## References
+### Docker in Docker
+- [Docker in Docker Image](https://hub.docker.com/_/docker)
+- [Compose File Reference](https://docs.docker.com/compose/compose-file/)
+- [Docker CLI Reference](https://docs.docker.com/engine/reference/commandline/cli/#environment-variables)
 
-- https://hub.docker.com/_/docker
-- https://docs.docker.com/compose/compose-file/
-- https://docs.docker.com/engine/reference/commandline/cli/#environment-variables
+### Development Environment
+- [Visual Studio Code](https://code.visualstudio.com/)
+- [Developing Inside a Container](https://code.visualstudio.com/docs/devcontainers/containers)
+- [Devcontainers JSON Reference](https://containers.dev/implementors/json_reference/)
+- [Ubuntu Base Devcontainer](https://github.com/devcontainers/images/tree/main/src/base-ubuntu)
+- [Docker on Host Feature](https://github.com/devcontainers/features/tree/main/src/docker-outside-of-docker)
