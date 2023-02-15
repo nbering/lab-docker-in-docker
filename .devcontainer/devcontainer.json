@@ -8,6 +8,9 @@
 	// Service representing the VSCode workspace
 	"service": "workspace",
 
+	// Don't run any services; user will start them as part of lab activity.
+	"runServices": [],
+
 	// Hard-coded to match docker-compose.yml
 	"workspaceFolder": "/workspaces/lab-docker-in-docker",
 
