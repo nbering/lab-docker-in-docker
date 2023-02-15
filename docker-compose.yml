@@ -4,4 +4,22 @@ services:
     image: mcr.microsoft.com/devcontainers/base:ubuntu-22.04
     volumes:
       - .:/workspaces/lab-docker-in-docker:cached
+      - certs:/certs
     command: /bin/sh -c "while sleep 1000; do :; done"
+
+#### 1-Basic
+  docker:
+    image: "docker:20.10-dind"
+    profiles:
+      - "1-basic"
+    privileged: true
+    ports:
+      # Expose docker API on host port 3376
+      - "127.0.0.1:3376:2376"
+    environment:
+      DOCKER_TLS_CERTDIR: /certs
+    volumes:
+      - "certs:/certs"
+      - "/var/lib/docker"
+volumes:
+  certs:
