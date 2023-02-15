@@ -3,8 +3,8 @@ services:
   workspace:
     image: mcr.microsoft.com/devcontainers/base:ubuntu-22.04
     volumes:
-      - .:/workspaces/lab-docker-in-docker:cached
-      - certs:/certs
+      - ".:/workspaces/lab-docker-in-docker:cached"
+      - "client_certs:/mnt/certs/client"
     command: /bin/sh -c "while sleep 1000; do :; done"
 
 #### 1-Basic
@@ -19,7 +19,11 @@ services:
     environment:
       DOCKER_TLS_CERTDIR: /certs
     volumes:
-      - "certs:/certs"
+      - "ca_certs:/certs/ca"
+      - "server_certs_basic:/certs/server"
+      - "client_certs:/certs/client"
       - "/var/lib/docker"
 volumes:
-  certs:
+  ca_certs:
+  client_certs:
+  server_certs_basic:
