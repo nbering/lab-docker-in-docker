@@ -10,7 +10,7 @@ your dev containeers, or other projects.
 
 # Exercises
 
-1. Basic[./1-Basic/README.md]
+1. [Basic](./Activities/1-Basic.md)
 
 
 ## References
