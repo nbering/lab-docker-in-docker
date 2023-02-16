@@ -1,0 +1,8 @@
+---
+services:
+  workspace:
+    image: mcr.microsoft.com/devcontainers/base:ubuntu-22.04
+    volumes:
+      - ".:/workspaces/lab-docker-in-docker:cached"
+      - "client_certs:/mnt/certs/client"
+    command: /bin/sh -c "while sleep 1000; do :; done"

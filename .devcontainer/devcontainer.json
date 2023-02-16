@@ -3,7 +3,8 @@
 {
 	"name": "Docker in Docker Lab",
 	"dockerComposeFile": [
-		"../docker-compose.yml"
+		"../docker-compose.yml",
+		"./docker-compose.yml"
 	],
 	// Service representing the VSCode workspace
 	"service": "workspace",
