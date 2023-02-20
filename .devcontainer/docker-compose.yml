@@ -5,4 +5,5 @@ services:
     volumes:
       - ".:/workspaces/lab-docker-in-docker:cached"
       - "client_certs:/mnt/certs/client"
+      - "ca_certs:/mnt/certs/ca"
     command: /bin/sh -c "while sleep 1000; do :; done"
