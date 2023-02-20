@@ -24,5 +24,5 @@
 	},
 
 	// Fix for git dubious file ownership
-	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}"
+	"postStartCommand": "git config --global --add safe.directory ${containerWorkspaceFolder}; sudo \"${containerWorkspaceFolder}/scripts/init-ca.sh\" -d /mnt/certs/ca"
 }
